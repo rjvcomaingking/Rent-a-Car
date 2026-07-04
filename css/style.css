@@ -1,0 +1,53 @@
+/* Use the custom font globally */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Enable smooth scrolling across the entire page */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Prevents headers from blocking section titles when clicking links */
+}
+
+/* Custom Scrollbar to match the dark stone-950 theme */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0c0c0c; /* Matches stone-950 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2e2a24; /* Subtle dark stone thumb */
+    border-radius: 5px;
+    border: 2px solid #0c0c0c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f59e0b; /* Turns Amber-500 on hover */
+}
+
+/* Smooth focus ring transitions for accessibility */
+input, select, textarea, button {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Custom selection color (when users highlight text) */
+::-moz-selection {
+    background-color: rgba(245, 158, 11, 0.3); /* Amber accent highlight */
+    color: #ffffff;
+}
+::selection {
+    background-color: rgba(245, 158, 11, 0.3);
+    color: #ffffff;
+}
+
+/* Subtle glowing utility class for the premium cars or buttons */
+.amber-glow-hover {
+    transition: all 0.3s ease;
+}
+.amber-glow-hover:hover {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.2);
+}
+
